@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class=" bg-img">
+
+        <header>
+            <h1 id="title">Call of Duty:Vanguard Beta</h1>
+            <p id="description">How does it look at first sight?</p>
+        </header>
+        <section class="container">
+
+            <form id="survey-form">
+                <div class="form-row">
+                    <label class="form-label" id="name-label" for="name">Name</label>
+                    <input class="form-text-row" id="name" type="text" name="name" placeholder="Enter your name"
+                        required />
+                </div>
+                <div class="form-row">
+                    <label class="form-label" id="email-label" for="email">Email</label>
+                    <input class="form-text-row" id="email" type="email" name="email" placeholder="Enter your email"
+                        required />
+                </div>
+                <div class="form-row">
+                    <label class="form-label" id="number-label" for="number">Years</label>
+                    <input class="form-text-row" id="number" type="number" name="years" placeholder="Years playing COD">
+                </div>
+
+                <div class="form-row">
+                    <p> What do you play most?</p>
+                    <select id="dropdow" name="most-played" required>
+                        <option disabled selected value>Your choice</option>
+                        <option value="modern">Modern Warfare</option>
+                        <option value="ops">Black Ops</option>
+                        <option value="war">Warzone</option>
+                        <option value="zombie">Zombies</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <p>Would you recommend COD to a friend?</p>
+                    <label>
+                        <input name="recommend" type="radio" value="Yes" class="input-radio" checked />Yes
+                    </label>
+                    <label>
+                        <input name="recommend" type="radio" value="No" class="input-radio" />No
+                    </label>
+                    <label>
+                        <input name="recommend" type="radio" value="Maybe" class="input-radio" />Maybe
+                    </label>
+                </div>
+                <div class="form-row">
+                    <p>Which was your favorite map in Vanguard?</p>
+                    <select id="favorite-map" name="favorite" required>
+                        <option disabled selected value>Your choice</option>
+                        <option value="modern">Red Star</option>
+                        <option value="ops">Gavutu</option>
+                        <option value="war">Hotel Royal</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <p>What should we improve in Vanguard?</p>
+                    <label>
+                        <input name="improve" value="extra-slots-classes" type="checkbox" class="input-checkbox">Extra
+                        slot classes
+                    </label>
+                    <label>
+                        <input name="improve" value="" type="checkbox" class="input-checkbox">Ban Cheaters
+                    </label>
+                    <label>
+                        <input name="improve" value="more-killstreaks" type="checkbox" class="input-checkbox">More
+                        killstreaks
+                    </label>
+                    <label>
+                        <input name="improve" value="custom-select-game-mode" type="checkbox"
+                            class="input-checkbox">Custom select game mode
+                    </label>
+                    <label>
+                        <input name="improve" value="visibility-and-spawning" type="checkbox"
+                            class="input-checkbox">Visibility and spawning
+                    </label>
+                    <label>
+                        <input name="improve" value="sound" type="checkbox" class="input-checkbox">Sound
+                    </label>
+                </div>
+                <div class="form-row">
+                    <p>Leave your comments or suggestions</p>
+                    <textarea id="comments" class="input-texarea" name="comment"
+                        placeholder="Enter your comments or suggestions"></textarea>
+                </div>
+                <div class="form-row">
+                    <button id="submit" type="submit" class="submit-button">Submit</button>
+
+                </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
