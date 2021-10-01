@@ -8,8 +8,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 20px;
+    line-height: 1.4;
+    color: white;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 header {
@@ -17,35 +19,28 @@ header {
     margin: 0 auto;
     text-align: center;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .bg-img {
-    background-image: url("../cod.jpg");
+    background-image: url("https://cdn.charlieintel.com/wp-content/uploads/2021/09/14030828/Call-of-Duty-Vanguard-Beta-Review-The-potential-to-be-a-great-PIC-5.jpg");
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 20px;
-    /* background-attachment: fixed; */
 }
 
 .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 50px auto 0;
-    background: rgba(174, 168, 211, 0.6);
+    background: rgba(148, 124, 176, 0.6);
     padding: 20px;
+    border-radius: 10px;
 }
-
-/* #name-label {
-    width: 100%;
-} */
-
-/* label {
-    width: 100%;
-} */
 
 .form-row {
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .form-label {
@@ -54,4 +49,21 @@ header {
 
 .form-text-row {
     width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#submit {
+    background-color: rgba(220, 198, 224, 1);
 }

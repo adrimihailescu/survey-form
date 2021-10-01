@@ -13,7 +13,7 @@
     <main class=" bg-img">
 
         <header>
-            <h1 id="title">Call of Duty:Vanguard Beta</h1>
+            <h1 id="title">Call of Duty:Vanguard Beta Survey</h1>
             <p id="description">How does it look at first sight?</p>
         </header>
         <section class="container">
@@ -31,12 +31,13 @@
                 </div>
                 <div class="form-row">
                     <label class="form-label" id="number-label" for="number">Years</label>
-                    <input class="form-text-row" id="number" type="number" name="years" placeholder="Years playing COD">
+                    <input class="form-text-row" id="number" type="number" name="years" min="1" max="10"
+                        placeholder="Years playing COD" required />
                 </div>
 
                 <div class="form-row">
                     <p> What do you play most?</p>
-                    <select id="dropdow" name="most-played" required>
+                    <select id="dropdown" name="most-played" required>
                         <option disabled selected value>Your choice</option>
                         <option value="modern">Modern Warfare</option>
                         <option value="ops">Black Ops</option>
@@ -73,7 +74,7 @@
                         slot classes
                     </label>
                     <label>
-                        <input name="improve" value="" type="checkbox" class="input-checkbox">Ban Cheaters
+                        <input name="improve" value="ban-cheaters" type="checkbox" class="input-checkbox">Ban Cheaters
                     </label>
                     <label>
                         <input name="improve" value="more-killstreaks" type="checkbox" class="input-checkbox">More
